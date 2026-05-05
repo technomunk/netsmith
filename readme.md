@@ -14,7 +14,7 @@ the moment.
 
 This crate provides:
 - [x] Reliable delivery over an unreliable link layer
-- [ ] Connection management
+- [x] Connection management
 - [ ] Channel multiplexing
 - [ ] Data validation
 - [ ] Packet fragmentation and re-assembly
