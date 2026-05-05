@@ -40,3 +40,10 @@ The crate started off because the author didn't like existing rust networking li
 * [carrier-pigeon](https://github.com/MitchellMarinoDev/carrier-pigeon) - based on Bevy ECS and mixes UDP and TCP sockets
 * [bevy_quinnet](https://github.com/Henauxg/bevy_quinnet) - based on Bevy ECS and forces additional memcpy overhead to handle `quinn` async API
 * [quinn](https://github.com/quinn-rs/quinn) - async API, forcing a particular app architecture. Additionally only supports full QUIC protocol, which may be too much for some applications
+* 
+## License
+
+This work is dual-licensed under Apache 2.0 and GPL 2.0 (or any later version).
+You can choose between one of them if you use this work.
+
+`SPDX-License-Identifier: Apache-2.0 OR GPL-2.0-or-later`
