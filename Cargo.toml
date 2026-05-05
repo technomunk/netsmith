@@ -1,0 +1,33 @@
+[package]
+name = "netsmith"
+version = "0.1.0"
+edition = "2024"
+description = "Building blocks for custom networking protocols"
+
+[workspace]
+members = [".", "macros"]
+
+[dependencies]
+delegate = "0.13"
+netforge-macros = { path = "macros" }
+thiserror = "2"
+
+# Serialization options
+bevy_reflect = { version = "0.18", optional = true }
+bincode = { version = "3", optional = true }
+serde = { version = "1", optional = true }
+wincode = { version = "0.5", optional = true }
+
+[features]
+default = ["client", "reliability", "server"]
+# derive Reflect from bevy_reflect for serializable types
+bevy = ["dep:bevy_reflect"]
+# derive Encode/Decode from bincode for serializable types
+bincode = ["dep:bincode"]
+client = []
+reliability = []
+# derive Serialize/Deserialize from wincode for serializable types
+serde = ["dep:serde"]
+server = []
+# derive Encode/Decode from wincode for serializable types
+wincode = ["dep:wincode"]

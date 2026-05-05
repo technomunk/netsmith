@@ -1,0 +1,8 @@
+[
+	{
+		"label": "cargo test --all-features",
+		"command": "cargo test --all-features -p $ZED_CUSTOM_RUST_PACKAGE",
+		"cwd": "$ZED_WORKTREE_ROOT",
+		"save": "all",
+	},
+]
